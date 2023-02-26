@@ -14,11 +14,29 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    // TODO: TextFieldx2
-    // TODO: トグルスイッチx2
-    // TODO: トグルスイッチのON → - , OFF → +
-    // TODO: Button
-    // TODO: Labelx4(トグルスイッチA_Result、トグルスイッチB_Result、不等号、CalculationResult)
+
+    @IBOutlet private weak var leftTextField: UITextField!
+    @IBOutlet private weak var rightTextField: UITextField!
+    @IBOutlet private weak var leftValueLabel: UILabel!
+    @IBOutlet private weak var rightValueLabel: UILabel!
+    @IBOutlet private weak var leftSwitch: UISwitch!
+    @IBOutlet private weak var rightSwitch: UISwitch!
+    @IBOutlet private weak var calculationResultLabel: UILabel!
+
+
+
+    @IBAction func leftSwitchChanged(_ sender: Any) {
+    }
+
+    @IBAction func rightSwitchChanged(_ sender: Any) {
+    }
+
+    @IBAction func calculationResultButton(_ sender: Any) {
+    }
+
+
+
+    // CalculationResult
 
 }
 
