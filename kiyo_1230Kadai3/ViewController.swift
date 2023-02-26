@@ -17,12 +17,10 @@ class ViewController: UIViewController {
     @IBOutlet private weak var rightSwitch: UISwitch!
     @IBOutlet private weak var calculationResultLabel: UILabel!
 
-
     @IBAction private func calculationResultButton(_ sender: Any) {
         var inputNumber1 = Int(leftTextField.text ?? "") ?? 0
         var inputNumber2 = Int(rightTextField.text ?? "") ?? 0
         let result: Int
-
 
         if leftSwitch.isOn {
             inputNumber1 *= -1
@@ -42,4 +40,3 @@ class ViewController: UIViewController {
         calculationResultLabel.text = "\(result)"
     }
 }
-
