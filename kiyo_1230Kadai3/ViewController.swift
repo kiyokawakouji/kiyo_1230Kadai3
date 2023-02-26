@@ -9,12 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
     @IBOutlet private weak var leftTextField: UITextField!
     @IBOutlet private weak var rightTextField: UITextField!
     @IBOutlet private weak var leftValueLabel: UILabel!
@@ -24,19 +18,28 @@ class ViewController: UIViewController {
     @IBOutlet private weak var calculationResultLabel: UILabel!
 
 
+    @IBAction private func calculationResultButton(_ sender: Any) {
+        var inputNumber1 = Int(leftTextField.text ?? "") ?? 0
+        var inputNumber2 = Int(rightTextField.text ?? "") ?? 0
+        let result: Int
 
-    @IBAction func leftSwitchChanged(_ sender: Any) {
+
+        if leftSwitch.isOn {
+            inputNumber1 *= -1
+        } else {
+            inputNumber1 *= 1
+        }
+
+        if rightSwitch.isOn {
+            inputNumber2 *= -1
+        } else {
+            inputNumber2 *= 1
+        }
+
+        result = inputNumber1 + inputNumber2
+        leftValueLabel.text = "\(inputNumber1)"
+        rightValueLabel.text = "\(inputNumber2)"
+        calculationResultLabel.text = "\(result)"
     }
-
-    @IBAction func rightSwitchChanged(_ sender: Any) {
-    }
-
-    @IBAction func calculationResultButton(_ sender: Any) {
-    }
-
-
-
-    // CalculationResult
-
 }
 

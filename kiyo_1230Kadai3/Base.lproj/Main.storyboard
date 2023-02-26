@@ -86,11 +86,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Od-wQ-k0O">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Od-wQ-k0O">
                                                 <rect key="frame" x="25" y="0.0" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="leftSwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="p1y-pe-jkj"/>
-                                                </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2e-dh-DjV">
                                                 <rect key="frame" x="89" y="0.0" width="7.6666666666666714" height="31"/>
@@ -109,11 +106,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cwW-Pc-CQ0">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cwW-Pc-CQ0">
                                                 <rect key="frame" x="25" y="0.0" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="rightSwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="YHq-ik-vUi"/>
-                                                </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFf-FK-yEK">
                                                 <rect key="frame" x="88.666666666666657" y="0.0" width="7.6666666666666714" height="31"/>
