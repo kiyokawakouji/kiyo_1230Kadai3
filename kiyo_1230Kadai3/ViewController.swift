@@ -18,25 +18,26 @@ class ViewController: UIViewController {
     @IBOutlet private weak var calculationResultLabel: UILabel!
 
     @IBAction private func calculationResultButton(_ sender: Any) {
-        var inputNumber1 = Int(leftTextField.text ?? "") ?? 0
-        var inputNumber2 = Int(rightTextField.text ?? "") ?? 0
-        let result: Int
+        let inputNumber1 = Int(leftTextField.text ?? "") ?? 0
+        let inputNumber2 = Int(rightTextField.text ?? "") ?? 0
 
+        let signedNumber1: Int
         if leftSwitch.isOn {
-            inputNumber1 *= -1
+            signedNumber1 = -inputNumber1
         } else {
-            inputNumber1 *= 1
+            signedNumber1 = inputNumber1
         }
 
+        let signedNumber2: Int
         if rightSwitch.isOn {
-            inputNumber2 *= -1
+            signedNumber2 = -inputNumber2
         } else {
-            inputNumber2 *= 1
+            signedNumber2 = inputNumber2
         }
 
-        result = inputNumber1 + inputNumber2
-        leftValueLabel.text = "\(inputNumber1)"
-        rightValueLabel.text = "\(inputNumber2)"
+        let result = signedNumber1 + signedNumber2
+        leftValueLabel.text = "\(signedNumber1)"
+        rightValueLabel.text = "\(signedNumber2)"
         calculationResultLabel.text = "\(result)"
     }
 }
